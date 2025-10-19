@@ -1,36 +1,35 @@
 let homeScore = document.getElementById("homeScore")
 let awayScore = document.getElementById("awayScore")
 
-home = 0
-away = 0
+let home = 0
+let away = 0
 
-
-function p1Home(){
+window.p1Home = function(){
     home++
     homeScore.textContent = home
 }
 
-function p2Home(){
+window.p2Home = function(){
     home += 2
     homeScore.textContent = home
 }
 
-function p3Home(){
+window.p3Home = function(){
     home += 3
     homeScore.textContent = home
 }
 
-function p1Away(){
+window.p1Away = function(){
     away++
     awayScore.textContent = away
 }
 
-function p2Away(){
+window.p2Away = function(){
     away += 2
     awayScore.textContent = away
 }
 
-function p3Away(){
+window.p3Away = function(){
     away += 3
     awayScore.textContent = away
 }
